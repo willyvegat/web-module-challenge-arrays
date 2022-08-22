@@ -69,6 +69,8 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 function is31Flavors(arrayFlavors){
   if(arrayFlavors.length === 31){
     return true;
+  } else{
+    return false;
   }
  }
 
@@ -87,11 +89,12 @@ Use the addFlavor function below to do the following:
 */
 
 
-function addFlavor(/*your code here*/){
-  /*your code here*/
+function addFlavor(array, newFlavor){
+  array.unshift(newFlavor);
+  return array;
  }
 
-
+console.log("Task 3: ", addFlavor(originalFlavors, "Rainbow Sherbert"));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Houston, we have a problem! There are now 32 flavors in the originalFlavors array! Your task is to remove an item from the end of the array. 
